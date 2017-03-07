@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="Cube2-1" Version="10.0.0" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="enet">
+      <VirtualDirectory Name="include">
+        <VirtualDirectory Name="enet">
+          <File Name="src/enet/include/enet/list.h"/>
+          <File Name="src/enet/include/enet/utility.h"/>
+          <File Name="src/enet/include/enet/enet.h"/>
+          <File Name="src/enet/include/enet/callbacks.h"/>
+          <File Name="src/enet/include/enet/unix.h"/>
+          <File Name="src/enet/include/enet/time.h"/>
+          <File Name="src/enet/include/enet/protocol.h"/>
+          <File Name="src/enet/include/enet/types.h"/>
+          <File Name="src/enet/include/enet/win32.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <File Name="src/enet/list.c"/>
+      <File Name="src/enet/host.c"/>
+      <File Name="src/enet/callbacks.c"/>
+      <File Name="src/enet/peer.c"/>
+      <File Name="src/enet/packet.c"/>
+      <File Name="src/enet/compress.c"/>
+      <File Name="src/enet/win32.c"/>
+      <File Name="src/enet/protocol.c"/>
+      <File Name="src/enet/unix.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="include">
+      <VirtualDirectory Name="GL">
+        <File Name="src/include/GL/glext.h"/>
+      </VirtualDirectory>
+      <File Name="src/include/SDL_video.h"/>
+      <File Name="src/include/SDL_types.h"/>
+      <File Name="src/include/SDL_joystick.h"/>
+      <File Name="src/include/SDL_main.h"/>
+      <File Name="src/include/begin_code.h"/>
+      <File Name="src/include/SDL_cdrom.h"/>
+      <File Name="src/include/SDL_config_win32.h"/>
+      <File Name="src/include/SDL_timer.h"/>
+      <File Name="src/include/SDL_getenv.h"/>
+      <File Name="src/include/SDL_loadso.h"/>
+      <File Name="src/include/SDL_opengl.h"/>
+      <File Name="src/include/SDL_platform.h"/>
+      <File Name="src/include/close_code.h"/>
+      <File Name="src/include/SDL_rwops.h"/>
+      <File Name="src/include/SDL_keysym.h"/>
+      <File Name="src/include/SDL_config_macosx.h"/>
+      <File Name="src/include/SDL_name.h"/>
+      <File Name="src/include/SDL_version.h"/>
+      <File Name="src/include/zlib.h"/>
+      <File Name="src/include/SDL_events.h"/>
+      <File Name="src/include/SDL.h"/>
+      <File Name="src/include/SDL_byteorder.h"/>
+      <File Name="src/include/SDL_image.h"/>
+      <File Name="src/include/SDL_copying.h"/>
+      <File Name="src/include/SDL_mutex.h"/>
+      <File Name="src/include/SDL_error.h"/>
+      <File Name="src/include/SDL_stdinc.h"/>
+      <File Name="src/include/SDL_mixer.h"/>
+      <File Name="src/include/SDL_quit.h"/>
+      <File Name="src/include/SDL_active.h"/>
+      <File Name="src/include/zconf.h"/>
+      <File Name="src/include/SDL_endian.h"/>
+      <File Name="src/include/SDL_cpuinfo.h"/>
+      <File Name="src/include/SDL_mouse.h"/>
+      <File Name="src/include/SDL_keyboard.h"/>
+      <File Name="src/include/SDL_thread.h"/>
+      <File Name="src/include/SDL_config.h"/>
+      <File Name="src/include/SDL_syswm.h"/>
+      <File Name="src/include/SDL_audio.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="xcode">
+      <VirtualDirectory Name="Frameworks">
+        <VirtualDirectory Name="SDL.framework">
+          <VirtualDirectory Name="Versions">
+            <VirtualDirectory Name="Current">
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_video.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_types.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_joystick.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config_macos.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_main.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/begin_code.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_cdrom.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config_win32.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_timer.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_getenv.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_loadso.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_opengl.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config_os2.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_platform.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/close_code.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_rwops.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_keysym.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config_macosx.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_name.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_version.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_events.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_byteorder.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_copying.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_mutex.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_error.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_stdinc.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_quit.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_active.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_endian.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config_dreamcast.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_cpuinfo.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_mouse.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_keyboard.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_thread.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_config.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_syswm.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/Current/Headers/SDL_audio.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="A">
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_video.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_types.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_joystick.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macos.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_main.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/begin_code.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_cdrom.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_win32.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_timer.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_getenv.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_loadso.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_opengl.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_os2.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_platform.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/close_code.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_rwops.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_keysym.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macosx.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_name.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_version.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_events.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_byteorder.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_copying.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_mutex.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_error.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_stdinc.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_quit.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_active.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_endian.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_dreamcast.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_cpuinfo.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_mouse.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_keyboard.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_thread.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_config.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_syswm.h"/>
+                <File Name="src/xcode/Frameworks/SDL.framework/Versions/A/Headers/SDL_audio.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Headers">
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_video.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_types.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_joystick.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config_macos.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_main.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/begin_code.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_cdrom.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config_win32.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_timer.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_getenv.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_loadso.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_opengl.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config_os2.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_platform.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/close_code.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_rwops.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_keysym.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config_macosx.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_name.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_version.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_events.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_byteorder.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_copying.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_mutex.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_error.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_stdinc.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_quit.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_active.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_endian.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config_dreamcast.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_cpuinfo.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_mouse.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_keyboard.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_thread.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_config.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_syswm.h"/>
+            <File Name="src/xcode/Frameworks/SDL.framework/Headers/SDL_audio.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SDL_mixer.framework">
+          <VirtualDirectory Name="Versions">
+            <VirtualDirectory Name="Current">
+              <VirtualDirectory Name="Frameworks">
+                <VirtualDirectory Name="FLAC.framework">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="FLAC">
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/format.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/export.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/all.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/callback.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/assert.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/metadata.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="FLAC">
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="FLAC">
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="Vorbis.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers/vorbisfile.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers/vorbisenc.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers/codec.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="Ogg.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Headers/os_types.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Headers/ogg.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="mikmod.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/mikmod.framework/Versions/Current/Headers/mikmod.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/mikmod.framework/Versions/A/Headers/mikmod.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/mikmod.framework/Headers/mikmod.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="smpeg.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGstream.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEG.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGlist.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGring.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGvideo.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGfilter.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/smpeg.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaudio.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGsystem.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaction.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGerror.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGstream.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEG.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGlist.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGring.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGvideo.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGfilter.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/smpeg.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaudio.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGsystem.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaction.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Versions/A/Headers/MPEGerror.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGstream.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEG.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGlist.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGring.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGvideo.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGfilter.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/smpeg.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGaudio.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGsystem.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGaction.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Frameworks/smpeg.framework/Headers/MPEGerror.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/Current/Headers/SDL_mixer.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="A">
+              <VirtualDirectory Name="Frameworks">
+                <VirtualDirectory Name="FLAC.framework">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="FLAC">
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/format.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/export.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/all.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/callback.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/assert.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/metadata.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="FLAC">
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="FLAC">
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="Vorbis.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers/vorbisfile.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers/vorbisenc.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers/codec.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="Ogg.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Headers/os_types.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/Ogg.framework/Headers/ogg.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="mikmod.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Versions/Current/Headers/mikmod.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Versions/A/Headers/mikmod.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Headers/mikmod.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="smpeg.framework">
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGstream.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEG.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGlist.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGring.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGvideo.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGfilter.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/smpeg.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaudio.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGsystem.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaction.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGerror.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGstream.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEG.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGlist.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGring.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGvideo.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGfilter.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/smpeg.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaudio.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGsystem.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaction.h"/>
+                        <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A/Headers/MPEGerror.h"/>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGstream.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEG.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGlist.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGring.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGvideo.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGfilter.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/smpeg.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGaudio.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGsystem.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGaction.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Headers/MPEGerror.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Versions/A/Headers/SDL_mixer.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Frameworks">
+            <VirtualDirectory Name="FLAC.framework">
+              <VirtualDirectory Name="Headers">
+                <VirtualDirectory Name="FLAC">
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/format.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/export.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/all.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/callback.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/assert.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/metadata.h"/>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="FLAC">
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="FLAC">
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Vorbis.framework">
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Headers/vorbisfile.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Headers/vorbisenc.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Vorbis.framework/Headers/codec.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Ogg.framework">
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Headers/os_types.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/Ogg.framework/Headers/ogg.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="mikmod.framework">
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/mikmod.framework/Versions/Current/Headers/mikmod.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/mikmod.framework/Versions/A/Headers/mikmod.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/mikmod.framework/Headers/mikmod.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="smpeg.framework">
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGstream.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEG.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGlist.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGring.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGvideo.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGfilter.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/smpeg.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaudio.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGsystem.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGaction.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/Current/Headers/MPEGerror.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGstream.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEG.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGlist.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGring.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGvideo.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGfilter.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/smpeg.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaudio.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGsystem.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGaction.h"/>
+                    <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/Headers/MPEGerror.h"/>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGstream.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEG.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGlist.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGring.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGvideo.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGfilter.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/smpeg.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGaudio.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGsystem.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGaction.h"/>
+                <File Name="src/xcode/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Headers/MPEGerror.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Headers">
+            <File Name="src/xcode/Frameworks/SDL_mixer.framework/Headers/SDL_mixer.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SDL_image.framework">
+          <VirtualDirectory Name="Versions">
+            <VirtualDirectory Name="Current">
+              <VirtualDirectory Name="Frameworks">
+                <VirtualDirectory Name="webp.framework">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="webp">
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Headers/webp/decode_vp8.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Headers/webp/decode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Headers/webp/encode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Headers/webp/types.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Headers/webp/mux.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="webp">
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/Current/Headers/webp/decode_vp8.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/Current/Headers/webp/decode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/Current/Headers/webp/encode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/Current/Headers/webp/types.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/Current/Headers/webp/mux.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="webp">
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/A/Headers/webp/decode_vp8.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/A/Headers/webp/decode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/A/Headers/webp/encode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/A/Headers/webp/types.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Frameworks/webp.framework/Versions/A/Headers/webp/mux.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/Current/Headers/SDL_image.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="A">
+              <VirtualDirectory Name="Frameworks">
+                <VirtualDirectory Name="webp.framework">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="webp">
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Headers/webp/decode_vp8.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Headers/webp/decode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Headers/webp/encode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Headers/webp/types.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Headers/webp/mux.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Versions">
+                    <VirtualDirectory Name="Current">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="webp">
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/Current/Headers/webp/decode_vp8.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/Current/Headers/webp/decode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/Current/Headers/webp/encode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/Current/Headers/webp/types.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/Current/Headers/webp/mux.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="A">
+                      <VirtualDirectory Name="Headers">
+                        <VirtualDirectory Name="webp">
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/decode_vp8.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/decode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/encode.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/types.h"/>
+                          <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/mux.h"/>
+                        </VirtualDirectory>
+                      </VirtualDirectory>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Headers">
+                <File Name="src/xcode/Frameworks/SDL_image.framework/Versions/A/Headers/SDL_image.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Frameworks">
+            <VirtualDirectory Name="webp.framework">
+              <VirtualDirectory Name="Headers">
+                <VirtualDirectory Name="webp">
+                  <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Headers/webp/decode_vp8.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Headers/webp/decode.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Headers/webp/encode.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Headers/webp/types.h"/>
+                  <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Headers/webp/mux.h"/>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Versions">
+                <VirtualDirectory Name="Current">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="webp">
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp/decode_vp8.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp/decode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp/encode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp/types.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp/mux.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+                <VirtualDirectory Name="A">
+                  <VirtualDirectory Name="Headers">
+                    <VirtualDirectory Name="webp">
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp/decode_vp8.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp/decode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp/encode.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp/types.h"/>
+                      <File Name="src/xcode/Frameworks/SDL_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp/mux.h"/>
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Headers">
+            <File Name="src/xcode/Frameworks/SDL_image.framework/Headers/SDL_image.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <File Name="src/xcode/Launcher.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="fpsgame">
+      <File Name="src/fpsgame/game.h"/>
+      <File Name="src/fpsgame/extinfo.h"/>
+      <File Name="src/fpsgame/ai.cpp"/>
+      <File Name="src/fpsgame/movable.cpp"/>
+      <File Name="src/fpsgame/scoreboard.cpp"/>
+      <File Name="src/fpsgame/server.cpp"/>
+      <File Name="src/fpsgame/capture.h"/>
+      <File Name="src/fpsgame/collect.h"/>
+      <File Name="src/fpsgame/render.cpp"/>
+      <File Name="src/fpsgame/waypoint.cpp"/>
+      <File Name="src/fpsgame/entities.cpp"/>
+      <File Name="src/fpsgame/pch.cpp"/>
+      <File Name="src/fpsgame/weapon.cpp"/>
+      <File Name="src/fpsgame/aiman.h"/>
+      <File Name="src/fpsgame/client.cpp"/>
+      <File Name="src/fpsgame/fps.cpp"/>
+      <File Name="src/fpsgame/ai.h"/>
+      <File Name="src/fpsgame/ctf.h"/>
+      <File Name="src/fpsgame/monster.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="engine">
+      <File Name="src/engine/texture.cpp"/>
+      <File Name="src/engine/sound.cpp"/>
+      <File Name="src/engine/water.cpp"/>
+      <File Name="src/engine/vertmodel.h"/>
+      <File Name="src/engine/serverbrowser.cpp"/>
+      <File Name="src/engine/textedit.h"/>
+      <File Name="src/engine/normal.cpp"/>
+      <File Name="src/engine/mpr.h"/>
+      <File Name="src/engine/blend.cpp"/>
+      <File Name="src/engine/menus.cpp"/>
+      <File Name="src/engine/worldio.cpp"/>
+      <File Name="src/engine/blob.cpp"/>
+      <File Name="src/engine/explosion.h"/>
+      <File Name="src/engine/md3.h"/>
+      <File Name="src/engine/rendermodel.cpp"/>
+      <File Name="src/engine/octa.cpp"/>
+      <File Name="src/engine/animmodel.h"/>
+      <File Name="src/engine/server.cpp"/>
+      <File Name="src/engine/model.h"/>
+      <File Name="src/engine/material.cpp"/>
+      <File Name="src/engine/octa.h"/>
+      <File Name="src/engine/glare.cpp"/>
+      <File Name="src/engine/skelmodel.h"/>
+      <File Name="src/engine/rendersky.cpp"/>
+      <File Name="src/engine/ragdoll.h"/>
+      <File Name="src/engine/texture.h"/>
+      <File Name="src/engine/decal.cpp"/>
+      <File Name="src/engine/smd.h"/>
+      <File Name="src/engine/obj.h"/>
+      <File Name="src/engine/lightning.h"/>
+      <File Name="src/engine/world.h"/>
+      <File Name="src/engine/octarender.cpp"/>
+      <File Name="src/engine/command.cpp"/>
+      <File Name="src/engine/shadowmap.cpp"/>
+      <File Name="src/engine/depthfx.h"/>
+      <File Name="src/engine/bih.h"/>
+      <File Name="src/engine/engine.h"/>
+      <File Name="src/engine/grass.cpp"/>
+      <File Name="src/engine/rendergl.cpp"/>
+      <File Name="src/engine/md2.h"/>
+      <File Name="src/engine/movie.cpp"/>
+      <File Name="src/engine/bih.cpp"/>
+      <File Name="src/engine/octaedit.cpp"/>
+      <File Name="src/engine/master.cpp"/>
+      <File Name="src/engine/lightmap.h"/>
+      <File Name="src/engine/pch.cpp"/>
+      <File Name="src/engine/dynlight.cpp"/>
+      <File Name="src/engine/renderva.cpp"/>
+      <File Name="src/engine/renderparticles.cpp"/>
+      <File Name="src/engine/main.cpp"/>
+      <File Name="src/engine/3dgui.cpp"/>
+      <File Name="src/engine/physics.cpp"/>
+      <File Name="src/engine/pvs.cpp"/>
+      <File Name="src/engine/client.cpp"/>
+      <File Name="src/engine/shader.cpp"/>
+      <File Name="src/engine/lensflare.h"/>
+      <File Name="src/engine/lightmap.cpp"/>
+      <File Name="src/engine/varray.h"/>
+      <File Name="src/engine/iqm.h"/>
+      <File Name="src/engine/rendertext.cpp"/>
+      <File Name="src/engine/console.cpp"/>
+      <File Name="src/engine/rendertarget.h"/>
+      <File Name="src/engine/scale.h"/>
+      <File Name="src/engine/md5.h"/>
+      <File Name="src/engine/cubeloader.cpp"/>
+      <File Name="src/engine/world.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="rpggame">
+      <File Name="src/rpggame/ent.cpp"/>
+      <File Name="src/rpggame/rpg.cpp"/>
+      <File Name="src/rpggame/rpg.h"/>
+      <File Name="src/rpggame/stats.h"/>
+      <File Name="src/rpggame/rpgent.h"/>
+      <File Name="src/rpggame/entities.cpp"/>
+      <File Name="src/rpggame/pch.cpp"/>
+      <File Name="src/rpggame/rpgobj.h"/>
+      <File Name="src/rpggame/objset.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="shared">
+      <File Name="src/shared/geom.cpp"/>
+      <File Name="src/shared/tools.cpp"/>
+      <File Name="src/shared/iengine.h"/>
+      <File Name="src/shared/igame.h"/>
+      <File Name="src/shared/tools.h"/>
+      <File Name="src/shared/ents.h"/>
+      <File Name="src/shared/zip.cpp"/>
+      <File Name="src/shared/geom.h"/>
+      <File Name="src/shared/command.h"/>
+      <File Name="src/shared/cube2font.c"/>
+      <File Name="src/shared/pch.cpp"/>
+      <File Name="src/shared/cube.h"/>
+      <File Name="src/shared/stream.cpp"/>
+      <File Name="src/shared/crypto.cpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="GNU makefile onestep build"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)/src/</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="GNU makefile onestep build"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

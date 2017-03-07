@@ -84,3 +84,16 @@ Mkfile.old
 dkms.conf
 
 bin_unix/*
+
+# codelite specifics
+.codelite/*
+
+# Project specifics
+# enet
+src/enet/.deps/
+src/enet/autom4te.cache
+src/enet/config.log
+src/enet/config.status
+src/enet/libtool
+src/enet/libenet.pc 
+src/enet/Makefile
