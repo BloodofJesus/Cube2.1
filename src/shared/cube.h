@@ -43,9 +43,9 @@
 #endif
 
 #ifndef STANDALONE
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_opengl.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_opengl.h>
 #endif
 
 #include <enet/enet.h>
