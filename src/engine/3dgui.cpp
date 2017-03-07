@@ -1335,7 +1335,6 @@ void g3d_render()
     if(!fieldsactive) fieldmode = FIELDSHOW; //didn't draw any fields, so loose focus - mainly for menu closed
     if((fieldmode!=FIELDSHOW) != wasfocused) 
     {
-        SDL_EnableUNICODE(fieldmode!=FIELDSHOW);
         keyrepeat(fieldmode!=FIELDSHOW || editmode);
     }
     
