@@ -8,8 +8,7 @@ void cleanup()
 {
     recorder::stop();
     cleanupserver();
-    SDL_ShowCursor(1);
-    SDL_WM_GrabInput(SDL_GRAB_OFF);
+    SDL_SetRelativeMouseMode(SDL_FALSE);
     cleargamma();
     freeocta(worldroot);
     extern void clear_command(); clear_command();
@@ -47,8 +46,7 @@ void fatal(const char *s, ...)    // failure exit
         {
             if(SDL_WasInit(SDL_INIT_VIDEO))
             {
-                SDL_ShowCursor(1);
-                SDL_WM_GrabInput(SDL_GRAB_OFF);
+                SDL_SetRelativeMouseMode(SDL_FALSE);
                 cleargamma();
             }
             #ifdef WIN32
@@ -68,6 +66,11 @@ int curtime = 0, totalmillis = 1, lastmillis = 1;
 dynent *player = NULL;
 
 int initing = NOT_INITING;
+
+XIDENT(IDF_SWLACC, VARNP, relativemouse, userelativemouse, 0, 1, 1);
+
+bool grabinput = false, minimized = false, canrelativemouse = true, relativemouse = false, isentered = false, isfocused = false, shouldminimize = false;
+int keyrepeatmask = 0, textinputmask = 0;
 
 bool initwarning(const char *desc, int level, int type)
 {
@@ -440,22 +443,19 @@ void renderprogress(float bar, const char *text, GLuint tex, bool background)   
     swapbuffers();
 }
 
-void keyrepeat(bool on)
+void keyrepeat(bool on, int mask)
 {
-    SDL_EnableKeyRepeat(on ? SDL_DEFAULT_REPEAT_DELAY : 0,
-                             SDL_DEFAULT_REPEAT_INTERVAL);
+	if(on) keyrepeatmask |= mask;
+	else keyrepeatmask &= ~mask;
 }
-
-bool grabinput = false, minimized = false;
 
 void inputgrab(bool on)
 {
 #ifndef WIN32
-    if(!(screen->flags & SDL_FULLSCREEN)) SDL_WM_GrabInput(SDL_GRAB_OFF);
+    if(!(screen->flags & SDL_WINDOW_FULLSCREEN)) SDL_SetRelativeMouseMode(SDL_FALSE);
     else
 #endif
-    SDL_WM_GrabInput(on ? SDL_GRAB_ON : SDL_GRAB_OFF);
-    SDL_ShowCursor(on ? SDL_DISABLE : SDL_ENABLE);
+	SDL_SetRelativeMouseMode(on ? SDL_TRUE : SDL_FALSE);
 }
 
 void setfullscreen(bool enable)
