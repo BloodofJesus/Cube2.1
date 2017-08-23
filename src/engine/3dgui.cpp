@@ -305,6 +305,8 @@ struct gui : g3d_gui
         int size = (int)(sizescale*2*FONTH)-SHADOW;
         if(visible())
         {
+			int w = SDL_GetWindowSurface(screen)->w;
+			int h = SDL_GetWindowSurface(screen)->h;
             bool hit = ishit(size+SHADOW, size+SHADOW);
             float xs = size, ys = size, xi = curx, yi = cury;
             if(overlaid && hit && actionon)
@@ -316,8 +318,8 @@ struct gui : g3d_gui
                 glEnable(GL_TEXTURE_2D);
                 defaultshader->set();
             }
-            int x1 = int(floor(screen->w*(xi*scale.x+origin.x))), y1 = int(floor(screen->h*(1 - ((yi+ys)*scale.y+origin.y)))),
-                x2 = int(ceil(screen->w*((xi+xs)*scale.x+origin.x))), y2 = int(ceil(screen->h*(1 - (yi*scale.y+origin.y))));
+            int x1 = int(floor(w*(xi*scale.x+origin.x))), y1 = int(floor(h*(1 - ((yi+ys)*scale.y+origin.y)))),
+                x2 = int(ceil(w*((xi+xs)*scale.x+origin.x))), y2 = int(ceil(h*(1 - (yi*scale.y+origin.y))));
             glViewport(x1, y1, x2-x1, y2-y1);
             glScissor(x1, y1, x2-x1, y2-y1);
             glEnable(GL_SCISSOR_TEST);
@@ -328,7 +330,7 @@ struct gui : g3d_gui
             glEnable(GL_BLEND);
             modelpreview::end();
             glDisable(GL_SCISSOR_TEST);
-            glViewport(0, 0, screen->w, screen->h);
+            glViewport(0, 0, w, h);
             if(overlaid)
             {
                 if(hit)
@@ -358,6 +360,8 @@ struct gui : g3d_gui
         int size = (int)(sizescale*2*FONTH)-SHADOW;
         if(visible())
         {
+			int w = SDL_GetWindowSurface(screen)->w;
+			int h = SDL_GetWindowSurface(screen)->h;
             bool hit = ishit(size+SHADOW, size+SHADOW);
             float xs = size, ys = size, xi = curx, yi = cury;
             if(overlaid && hit && actionon)
@@ -369,8 +373,8 @@ struct gui : g3d_gui
                 glEnable(GL_TEXTURE_2D);
                 defaultshader->set();
             }
-            int x1 = int(floor(screen->w*(xi*scale.x+origin.x))), y1 = int(floor(screen->h*(1 - ((yi+ys)*scale.y+origin.y)))),
-                x2 = int(ceil(screen->w*((xi+xs)*scale.x+origin.x))), y2 = int(ceil(screen->h*(1 - (yi*scale.y+origin.y))));
+            int x1 = int(floor(w*(xi*scale.x+origin.x))), y1 = int(floor(h*(1 - ((yi+ys)*scale.y+origin.y)))),
+                x2 = int(ceil(w*((xi+xs)*scale.x+origin.x))), y2 = int(ceil(h*(1 - (yi*scale.y+origin.y))));
             glViewport(x1, y1, x2-x1, y2-y1);
             glScissor(x1, y1, x2-x1, y2-y1);
             glEnable(GL_SCISSOR_TEST);
@@ -393,7 +397,7 @@ struct gui : g3d_gui
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             glEnable(GL_BLEND);
             glDisable(GL_SCISSOR_TEST);
-            glViewport(0, 0, screen->w, screen->h);
+            glViewport(0, 0, w, h);
             if(overlaid)
             {
                 if(hit)
@@ -879,14 +883,17 @@ struct gui : g3d_gui
 
     void adjustscale()
     {
-        int w = xsize + (skinx[2]-skinx[1])*SKIN_SCALE + (skinx[10]-skinx[9])*SKIN_SCALE, h = ysize + (skiny[9]-skiny[7])*SKIN_SCALE;
-        if(tcurrent) h += ((skiny[5]-skiny[1])-(skiny[3]-skiny[2]))*SKIN_SCALE + FONTH-2*INSERT;
-        else h += (skiny[6]-skiny[3])*SKIN_SCALE;
+        int skin_w = xsize + (skinx[2]-skinx[1])*SKIN_SCALE + (skinx[10]-skinx[9])*SKIN_SCALE;
+		int skin_h = ysize + (skiny[9]-skiny[7])*SKIN_SCALE;
+        if(tcurrent) skin_h += ((skiny[5]-skiny[1])-(skiny[3]-skiny[2]))*SKIN_SCALE + FONTH-2*INSERT;
+        else skin_h += (skiny[6]-skiny[3])*SKIN_SCALE;
+		int w = SDL_GetWindowSurface(screen)->w;
+		int h = SDL_GetWindowSurface(screen)->h;
 
-        float aspect = forceaspect ? 1.0f/forceaspect : float(screen->h)/float(screen->w), fit = 1.0f;
-        if(w*aspect*basescale>1.0f) fit = 1.0f/(w*aspect*basescale);
+        float aspect = forceaspect ? 1.0f/forceaspect : float(h)/float(w), fit = 1.0f;
+        if(skin_w*aspect*basescale>1.0f) fit = 1.0f/(skin_w*aspect*basescale);
         if(h*basescale*fit>maxscale) fit *= maxscale/(h*basescale*fit);
-        origin = vec(0.5f-((w-xsize)/2 - (skinx[2]-skinx[1])*SKIN_SCALE)*aspect*scale.x*fit, 0.5f + (0.5f*h-(skiny[9]-skiny[7])*SKIN_SCALE)*scale.y*fit, 0);
+        origin = vec(0.5f-((skin_w-xsize)/2 - (skinx[2]-skinx[1])*SKIN_SCALE)*aspect*scale.x*fit, 0.5f + (0.5f*h-(skiny[9]-skiny[7])*SKIN_SCALE)*scale.y*fit, 0);
         scale = vec(aspect*scale.x*fit, scale.y*fit, 1);
     }
 
@@ -1217,7 +1224,7 @@ bool g3d_movecursor(int dx, int dy)
 {
     if(!guis2d.length() || !hascursor) return false;
     const float CURSORSCALE = 500.0f;
-    cursorx = max(0.0f, min(1.0f, cursorx+guisens*dx*(screen->h/(screen->w*CURSORSCALE))));
+    cursorx = max(0.0f, min(1.0f, cursorx+guisens*dx*(SDL_GetWindowSurface(screen)->h/(SDL_GetWindowSurface(screen)->w*CURSORSCALE))));
     cursory = max(0.0f, min(1.0f, cursory+guisens*dy/CURSORSCALE));
     return true;
 }

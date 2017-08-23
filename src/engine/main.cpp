@@ -59,7 +59,7 @@ void fatal(const char *s, ...)    // failure exit
     exit(EXIT_FAILURE);
 }
 
-SDL_Surface *screen = NULL;
+SDL_Window *screen = NULL;
 
 int curtime = 0, totalmillis = 1, lastmillis = 1;
 
@@ -150,7 +150,9 @@ void renderbackground(const char *caption, Texture *mapshot, const char *mapname
 
     stopsounds(); // stop sounds while loading
  
-    int w = screen->w, h = screen->h;
+    int w = SDL_GetWindowSurface(screen)->w;
+	int h = SDL_GetWindowSurface(screen)->h;
+	
     if(forceaspect) w = int(ceil(h*forceaspect));
     getbackgroundres(w, h);
     gettextres(w, h);
@@ -223,7 +225,7 @@ void renderbackground(const char *caption, Texture *mapshot, const char *mapname
         glEnd();
         float lh = 0.5f*min(w, h), lw = lh*2,
               lx = 0.5f*(w - lw), ly = 0.5f*(h*0.5f - lh);
-        settexture((maxtexsize ? min(maxtexsize, hwtexsize) : hwtexsize) >= 1024 && (screen->w > 1280 || screen->h > 800) ? "data/logo_1024.png" : "data/logo.png", 3);
+        settexture((maxtexsize ? min(maxtexsize, hwtexsize) : hwtexsize) >= 1024 && (w > 1280 || h > 800) ? "data/logo_1024.png" : "data/logo.png", 3);
         glBegin(GL_TRIANGLE_STRIP);
         glTexCoord2f(0, 0); glVertex2f(lx,    ly);
         glTexCoord2f(1, 0); glVertex2f(lx+lw, ly);
@@ -336,7 +338,9 @@ void renderprogress(float bar, const char *text, GLuint tex, bool background)   
     extern int sdl_backingstore_bug;
     if(background || sdl_backingstore_bug > 0) restorebackground();
 
-    int w = screen->w, h = screen->h;
+    int w = SDL_GetWindowSurface(screen)->w;
+	int h = SDL_GetWindowSurface(screen)->h;
+	
     if(forceaspect) w = int(ceil(h*forceaspect));
     getbackgroundres(w, h);
     gettextres(w, h);
@@ -452,7 +456,7 @@ void keyrepeat(bool on, int mask)
 void inputgrab(bool on)
 {
 #ifndef WIN32
-    if(!(screen->flags & SDL_WINDOW_FULLSCREEN)) SDL_SetRelativeMouseMode(SDL_FALSE);
+    if(!(SDL_GetWindowSurface(screen)->flags & SDL_WINDOW_FULLSCREEN)) SDL_SetRelativeMouseMode(SDL_FALSE);
     else
 #endif
 	SDL_SetRelativeMouseMode(on ? SDL_TRUE : SDL_FALSE);
@@ -464,9 +468,9 @@ void setfullscreen(bool enable)
 #if defined(WIN32) || defined(__APPLE__)
     initwarning(enable ? "fullscreen" : "windowed");
 #else
-    if(enable == !(screen->flags&SDL_FULLSCREEN))
+    if(enable == !(SDL_GetWindowSurface(screen)->flags&SDL_WINDOW_FULLSCREEN))
     {
-        SDL_WM_ToggleFullScreen(screen);
+		SDL_SetWindowFullscreen(screen, SDL_WINDOW_FULLSCREEN);
         inputgrab(grabinput);
     }
 #endif
@@ -491,11 +495,12 @@ void screenres(int *w, int *h)
 #else
         return;
     }
-    SDL_Surface *surf = SDL_SetVideoMode(clamp(*w, SCR_MINW, SCR_MAXW), clamp(*h, SCR_MINH, SCR_MAXH), 0, SDL_OPENGL|(screen->flags&SDL_FULLSCREEN ? SDL_FULLSCREEN : SDL_RESIZABLE));
+	SDL_Window *surf = SDL_CreateWindow("Cube 2.1", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, clamp(*w, SCR_MINW, SCR_MAXW), clamp(*h, SCR_MINH, SCR_MAXH), SDL_WINDOW_OPENGL|SDL_WINDOW_FULLSCREEN);
+	SDL_GL_CreateContext(surf);
     if(!surf) return;
     screen = surf;
-    scr_w = screen->w;
-    scr_h = screen->h;
+    scr_w = SDL_GetWindowSurface(screen)->w;
+    scr_h = SDL_GetWindowSurface(screen)->h;
     glViewport(0, 0, scr_w, scr_h);
 #endif
 }
@@ -507,15 +512,18 @@ VARFP(gamma, 30, 100, 300,
 {
     if(gamma == curgamma) return;
     curgamma = gamma;
-	float f = gamma/100.0f;
-    if(SDL_SetGamma(f,f,f)==-1) conoutf(CON_ERROR, "Could not set gamma: %s", SDL_GetError());
+	const Uint16 f = gamma/100;
+	if(SDL_SetWindowGammaRamp(screen, &f, &f, &f)<0)
+	{
+		conoutf(CON_ERROR, "Could not set gamma: %s", SDL_GetError());
+	}
 });
 
 void restoregamma()
 {
     if(curgamma == 100) return;
     float f = curgamma/100.0f;
-    SDL_SetGamma(1, 1, 1);
+    SDL_SetWindowGammaRamp(screen, 1, 1, 1);
     SDL_SetGamma(f, f, f);
 }
 

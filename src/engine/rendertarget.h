@@ -251,10 +251,13 @@ struct rendertarget
 
     void blur(int wantsblursize, float wantsblursigma, int x, int y, int w, int h, bool scissor)
     {
+		int screen_w = SDL_GetWindowSurface(screen)->w;
+		int screen_h = SDL_GetWindowSurface(screen)->h;
+		
         if(!hasFBO)
         {
-            x += screen->w-vieww;
-            y += screen->h-viewh;
+            x += screen_w-vieww;
+            y += screen_h-viewh;
         }
         else if(!blurtex) setupblur();
         if(blursize!=wantsblursize || (wantsblursize && blursigma!=wantsblursigma))
@@ -286,7 +289,7 @@ struct rendertarget
 
             rendertiles();
 
-            if(!hasFBO) glCopyTexSubImage2D(target, 0, x-(screen->w-vieww), y-(screen->h-viewh), x, y, w, h);
+            if(!hasFBO) glCopyTexSubImage2D(target, 0, x-(screen_w-vieww), y-(screen_h-viewh), x, y, w, h);
         }
 
         if(scissor) glDisable(GL_SCISSOR_TEST);
@@ -357,28 +360,31 @@ struct rendertarget
 
     void render(int w, int h, int blursize = 0, float blursigma = 0)
     {
+		int screen_w = SDL_GetWindowSurface(screen)->w;
+		int screen_h = SDL_GetWindowSurface(screen)->h;
+		
         w = min(w, hwtexsize);
         h = min(h, hwtexsize);
         if(texrect())
         {
-            if(w > screen->w) w = screen->w;
-            if(h > screen->h) h = screen->h;
+            if(w > screen_w) w = screen_w;
+            if(h > screen_h) h = screen_h;
             vieww = w;
             viewh = h;
         }
         else if(screenview())
         {
-            while(screen->w < (w*3)/4) w /= 2;
-            while(screen->h < (h*3)/4) h /= 2;
-            vieww = min(w, screen->w);
-            viewh = min(h, screen->h);
+            while(screen_w < (w*3)/4) w /= 2;
+            while(screen_h < (h*3)/4) h /= 2;
+            vieww = min(w, screen_w);
+            viewh = min(h, screen_h);
         }
         else 
         {
             if(!hasFBO)
             {
-                while(w > screen->w) w /= 2;
-                while(h > screen->h) h /= 2;
+                while(w > screen_w) w /= 2;
+                while(h > screen_h) h /= 2;
             }
             vieww = w;
             viewh = h;
@@ -416,7 +422,7 @@ struct rendertarget
                 glFramebufferTexture2D_(GL_FRAMEBUFFER_EXT, attachment(), target, rendertex, 0);
             glViewport(0, 0, vieww, viewh);
         }
-        else glViewport(screen->w-vieww, screen->h-viewh, vieww, viewh);
+        else glViewport(screen_w-vieww, screen_h-viewh, vieww, viewh);
 
         doclear();
 
@@ -426,16 +432,16 @@ struct rendertarget
         {
             if(!hasFBO)
             {
-                sx += screen->w-vieww;
-                sy += screen->h-viewh;
+                sx += screen_w-vieww;
+                sy += screen_h-viewh;
             }
             glScissor(sx, sy, sw, sh);
             glEnable(GL_SCISSOR_TEST);
         }
         else
         {
-            sx = hasFBO ? 0 : screen->w-vieww;
-            sy = hasFBO ? 0 : screen->h-viewh;
+            sx = hasFBO ? 0 : screen_w-vieww;
+            sy = hasFBO ? 0 : screen_h-viewh;
             sw = vieww;
             sh = viewh;
         }
@@ -455,12 +461,12 @@ struct rendertarget
                 glBindTexture(target, rendertex);
                 if(!initialized) 
                 {
-                    sx = screen->w-vieww;
-                    sy = screen->h-viewh;
+                    sx = screen_w-vieww;
+                    sy = screen_h-viewh;
                     sw = vieww;
                     sh = viewh;
                 }
-                glCopyTexSubImage2D(target, 0, sx-(screen->w-vieww), sy-(screen->h-viewh), sx, sy, sw, sh);
+                glCopyTexSubImage2D(target, 0, sx-(screen_w-vieww), sy-(screen_h-viewh), sx, sy, sw, sh);
             }
             initialized = true;
 
@@ -468,7 +474,7 @@ struct rendertarget
         }
 
         if(hasFBO) glBindFramebuffer_(GL_FRAMEBUFFER_EXT, 0);
-        glViewport(0, 0, screen->w, screen->h);
+        glViewport(0, 0, screen_w, screen_h);
     }
 
     virtual void dodebug(int w, int h) {}
@@ -530,8 +536,11 @@ struct rendertarget
 
     void debug()
     {
+		int screen_w = SDL_GetWindowSurface(screen)->w;
+		int screen_h = SDL_GetWindowSurface(screen)->h;
+		
         if(!rendertex) return;
-        int w = min(screen->w, screen->h)/2, h = (w*screen->h)/screen->w;
+        int w = min(screen_w, screen_h)/2, h = (w*screen_h)/screen_w;
         (target==GL_TEXTURE_RECTANGLE_ARB ? rectshader : defaultshader)->set();
         glColor3f(1, 1, 1);
         glEnable(target);
